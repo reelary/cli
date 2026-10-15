@@ -2,6 +2,12 @@
   "name": "reelary",
   "version": "0.1.0",
   "description": "Search your own footage by meaning and cut it into a video from Claude, Cursor, Codex and other AI agents. Installs Reelary (100% local) and its MCP server.",
+  "homepage": "https://reelary.app/agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reelary/cli.git"
+  },
+  "bugs": "https://github.com/reelary/cli/issues",
   "type": "module",
   "bin": {
     "reelary": "dist/index.js"

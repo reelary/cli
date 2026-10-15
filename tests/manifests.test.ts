@@ -16,7 +16,7 @@ describe.skipIf(!fs.existsSync(A))("manifests", () => {
     expect(read(".claude-plugin/plugin.json").name).toBe("reelary");
     const m = read(".claude-plugin/marketplace.json");
     expect(m.plugins[0].name).toBe("reelary");
-    expect(m.plugins[0].skills).toHaveLength(13);
+    expect(m.plugins[0].skills).toHaveLength(6);
     for (const s of m.plugins[0].skills) expect(fs.existsSync(path.join(A, s, "SKILL.md"))).toBe(true);
   });
 

@@ -1,7 +1,7 @@
 // Install the Reelary skills through the `skills` CLI so installs count on the skills.sh leaderboard.
 import { spawnSync } from "node:child_process";
 
-export const SKILLS_REPO = "reelary/agent";
+export const SKILLS_REPO = "reelary/skills";
 
 // A local checkout or another repo for testing; the public repo is what counts on skills.sh.
 export function skillsSource(env: NodeJS.ProcessEnv = process.env): string {
@@ -21,5 +21,5 @@ export function skillsInstallHint(): string {
 }
 
 export function skillsRemoveHint(): string {
-  return `npx skills remove -g reelary find-footage broll-finder rough-cut script-to-video nle-export media-library photo-search montage-maker vertical-video dialogue-search footage-by-location face-search`;
+  return `npx skills remove -g reelary find-footage broll-finder rough-cut vertical-video nle-export`;
 }

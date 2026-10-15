@@ -10,11 +10,11 @@ Installs the signed Reelary app (runs in the background with a tray icon), conne
 
 Skills only (any of 60+ agents):
 
-    npx skills add reelary/agent
+    npx skills add reelary/skills
 
 Claude Code plugin (skills + MCP server):
 
-    /plugin marketplace add reelary/agent
+    /plugin marketplace add reelary/skills
     /plugin install reelary@reelary
 
 ## What you can ask
@@ -28,19 +28,14 @@ Claude Code plugin (skills + MCP server):
 
 | Skill | For |
 |---|---|
-| reelary | Start here; routes to the others, installs and troubleshoots |
-| find-footage | Find a shot by describing it |
+| reelary | Start here: install, index folders and drives, troubleshoot |
+| find-footage | Shots by description, photos, quotes (Pro), people (Pro), places and drone GPS (Pro) |
 | broll-finder | B-roll for a voiceover or interview |
-| rough-cut | Script or shot list to an editable cut |
-| script-to-video | Script or blog post to a finished video from your own footage |
-| nle-export | FCPXML / XML / EDL for Premiere, Final Cut, Resolve (Pro) |
-| media-library | Index and organize folders and drives |
-| photo-search | Find photos by description |
-| montage-maker | Montages, highlight reels, recaps |
+| rough-cut | Rough cuts, script-to-video, montages, highlight reels |
 | vertical-video | Shorts, Reels, TikTok (9:16, 1:1) |
-| dialogue-search | Find what someone said (Pro) |
-| footage-by-location | Footage by place, drone and GoPro GPS (Pro) |
-| face-search | Every clip of a person (Pro) |
+| nle-export | FCPXML / XML / EDL for Premiere, Final Cut, Resolve (Pro) |
+
+Skills source: https://github.com/reelary/skills
 
 ## Plans
 

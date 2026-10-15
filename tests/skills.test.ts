@@ -6,8 +6,7 @@ import { TOOL_NAMES } from "../src/mcp.js";
 
 // The skills repo is a sibling checkout (../reelary-skills); override with REELARY_SKILLS_DIR.
 const ROOT = path.join(process.env.REELARY_SKILLS_DIR ?? path.resolve(__dirname, "../../reelary-skills"), "skills");
-const EXPECTED = ["reelary", "find-footage", "broll-finder", "rough-cut", "script-to-video", "nle-export", "media-library",
-  "photo-search", "montage-maker", "vertical-video", "dialogue-search", "footage-by-location", "face-search"];
+const EXPECTED = ["reelary", "find-footage", "broll-finder", "rough-cut", "vertical-video", "nle-export"];
 
 // Parse frontmatter with a real YAML parser, like the skills CLI does (an unquoted ": " breaks it).
 function front(md: string): Record<string, string> {
