@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.reelary/cli",
+  "title": "Reelary",
+  "description": "Search your own videos and photos by meaning and cut them into a video, 100% local.",
+  "websiteUrl": "https://reelary.app/agents",
+  "repository": {
+    "url": "https://github.com/reelary/cli",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "reelary",
+      "version": "0.1.1",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }]
+    }
+  ]
+}

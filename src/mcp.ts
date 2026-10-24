@@ -55,7 +55,7 @@ const draftSchema = z.object({
 });
 
 export function buildServer(api: Api, readFile: (p: string) => Buffer = (p) => fs.readFileSync(p)): McpServer {
-  const server = new McpServer({ name: "reelary", version: "0.1.0" }, { capabilities: { tools: {} } });
+  const server = new McpServer({ name: "reelary", version: "0.1.1" }, { capabilities: { tools: {} } });
   const tool = <S extends z.ZodObject>(name: (typeof TOOL_NAMES)[number], description: string, inputSchema: S, run: (a: z.infer<S>) => Promise<ToolResult>) =>
     // The SDK infers args via StandardSchema; inside this generic helper TS cannot prove that equals z.infer<S>.
     server.registerTool(name, { description, inputSchema }, ((a: z.infer<S>) => guarded(() => run(a))) as unknown as ToolCallback<S>);

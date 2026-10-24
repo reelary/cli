@@ -2,7 +2,7 @@ import { parseCommand, runCommand, HELP } from "./commands.js";
 import { runSetup, runUninstall } from "./setup.js";
 import { runMcp } from "./mcp.js";
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 async function main(): Promise<number> {
   const argv = process.argv.slice(2);
